@@ -12,6 +12,7 @@ def speak(text):
     engine.say(text)
     engine.runAndWait()
 
+
 def listen():
     recognizer = sr.Recognizer()
     try:
@@ -97,3 +98,4 @@ while chat:
     else:
         # Echo reply
         speak("You said " + user_msg)
+
